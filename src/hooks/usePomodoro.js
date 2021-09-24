@@ -1,9 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 
-// const POMODORO_DURATION = 25 * 60
-// const SHORT_BREAK_DURATION = 5 * 60
-const POMODORO_DURATION = 5
-const SHORT_BREAK_DURATION = 2
+const POMODORO_DURATION = 25 * 60
+const SHORT_BREAK_DURATION = 5 * 60
 
 export const usePomodoro = () => {
   const [state, setState] = useState({
