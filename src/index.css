@@ -27,7 +27,10 @@ body {
   place-items: center;
   width: 100%;
   height: 100vh;
-  background: var(--bg);
+  background: url('./assets/circle-bg.svg'), url('./assets/circle-bg.svg'),
+    var(--bg);
+  background-repeat: no-repeat;
+  background-position: top -15% right -5%, bottom -20% left -15%;
 }
 
 .container {

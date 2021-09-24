@@ -8,7 +8,6 @@ export const App = () => {
     secondsElapsed,
     time,
     isBreak,
-    isPaused,
     isRunning,
     pauseText,
     startPomodoro,
