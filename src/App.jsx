@@ -9,7 +9,7 @@ export const App = () => {
     time,
     isBreak,
     isRunning,
-    pauseText,
+    isPaused,
     startPomodoro,
     pausePomodoro,
   } = usePomodoro()
@@ -40,7 +40,7 @@ export const App = () => {
           Start {isBreak ? 'Break' : 'Pomodoro'}
         </button>
         <button className="button button--dangerous" onClick={pausePomodoro}>
-          {pauseText}
+          {!isPaused ? 'Pause' : 'Resume'} {isBreak ? 'Break' : 'Pomodoro'}
         </button>
       </div>
     </section>
